@@ -46,7 +46,7 @@ func multiply(instr []string) int {
 			num1, _ := strconv.Atoi((matches[0]))
 			num2, _ := strconv.Atoi((matches[1]))
 
-			result = result + num1*num2
+			result += num1 * num2
 		}
 	}
 
@@ -58,6 +58,5 @@ func main() {
 	output, _ := file.ReadInput(absPathName)
 
 	validInstr := regexFilter(output)
-	// fmt.Println(validInstr)
 	fmt.Println(multiply(validInstr))
 }

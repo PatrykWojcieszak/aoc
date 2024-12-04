@@ -36,7 +36,7 @@ func multiply(instr []string) int {
 		num1, _ := strconv.Atoi((matches[0]))
 		num2, _ := strconv.Atoi((matches[1]))
 
-		result = result + num1*num2
+		result += num1 * num2
 	}
 
 	return result
